@@ -1,14 +1,19 @@
 import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 import SingleBook from "./SingleBook";
 
 function BookList(props) {
   const { books } = props;
   return (
-    <div>
-      {books.map((book) => (
-        <SingleBook book={book} key={book.id} />
-      ))}
-    </div>
+    <Container>
+      <Row>
+        {books.map((book, index) => (
+          <Col key={index}>
+            <SingleBook book={book} />
+          </Col>
+        ))}
+      </Row>
+    </Container>
   );
 }
 
