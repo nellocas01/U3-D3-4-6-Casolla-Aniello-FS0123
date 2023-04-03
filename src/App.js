@@ -17,7 +17,7 @@ function App() {
       <MyNav brand="EpiBooks" claim="Scegli il libro che fa per te!" />
       <Welcome/>
       {/* <AllTheBooks /> */}
-      <SingleBook book={horror}/>
+      {/* <SingleBook book={horror}/> */}
       <BookList books={horror}/>
       <MyFooter/>
     </>
